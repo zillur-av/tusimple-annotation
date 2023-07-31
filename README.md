@@ -13,6 +13,9 @@ To create a dataset in tusimple format, we will use [VIA annotation tool](https:
 
 After annotating all the images and exporting the annotation file, run each cell of `tusimple_annotation.ipynb` to get the dataset in tusimple format. Make sure to edit the file location in line 1 and raw_images location in `dictionary` object.
 
+## Class annotation
+If you want to annotate lane classes like solid, dash, etc, then create a .txt file of the same name as the json file. Like if your json file name is `LVLane_train_sunny.json` and then create a file named by `LVLane_train_sunny_classes.txt`. For each image, we will have one line in that txt file. If one image contains 5 lanes, we will have 5 labels separated by space in that line. Use [this](https://github.com/zillur-av/tusimple-annotation/blob/main/class_mapping.txt) to get class names. Run [this](https://github.com/zillur-av/tusimple-annotation/blob/main/vis.py) code to get lane visualization. You have to modify the location and json names in lines https://github.com/zillur-av/tusimple-annotation/blob/d149a89fbaa5c95243db1ef002d29174449f0783/vis.py#L112. You can edit the time in https://github.com/zillur-av/tusimple-annotation/blob/d149a89fbaa5c95243db1ef002d29174449f0783/vis.py#L80. For now, it is set to 4 seconds.
+
 ## Citation
 If you use our tool, please cite the following the paper as well as  [VIA annotation tool](https://www.robots.ox.ac.uk/~vgg/software/via/)
 ```
