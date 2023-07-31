@@ -11,7 +11,7 @@ To create a dataset in tusimple format, we will use [VIA annotation tool](https:
 4. Save the project for later use.
 5. Export the annotations in `json` format.
 
-After annotating all the images and exporting the annotation file, run each cell of `tusimple_annotation.ipynb` to get the dataset in tusimple format.
+After annotating all the images and exporting the annotation file, run each cell of `tusimple_annotation.ipynb` to get the dataset in tusimple format. Make sure to edit the file location in line 1 and raw_images location in `dictionary` object.
 
 ## Citation
 If you use our tool, please cite the following the paper as well as  [VIA annotation tool](https://www.robots.ox.ac.uk/~vgg/software/via/)
